@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Проекты\\Проекты в Visual Studio\\Мой проект 3\\NIP1\\NIPLessons\\API2021\\API2021.csproj": {}
+  },
+  "projects": {
+    "D:\\Проекты\\Проекты в Visual Studio\\Мой проект 3\\NIP1\\NIPLessons\\API2021\\API2021.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Проекты\\Проекты в Visual Studio\\Мой проект 3\\NIP1\\NIPLessons\\API2021\\API2021.csproj",
+        "projectName": "API2021",
+        "projectPath": "D:\\Проекты\\Проекты в Visual Studio\\Мой проект 3\\NIP1\\NIPLessons\\API2021\\API2021.csproj",
+        "packagesPath": "C:\\Users\\Schegolev.nn\\.nuget\\packages\\",
+        "outputPath": "D:\\Проекты\\Проекты в Visual Studio\\Мой проект 3\\NIP1\\NIPLessons\\API2021\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Schegolev.nn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Tekla.Structures": {
+              "target": "Package",
+              "version": "[2021.0.0, )"
+            },
+            "Tekla.Structures.Catalogs": {
+              "target": "Package",
+              "version": "[2021.0.0, )"
+            },
+            "Tekla.Structures.Datatype": {
+              "target": "Package",
+              "version": "[2021.0.0, )"
+            },
+            "Tekla.Structures.Dialog": {
+              "target": "Package",
+              "version": "[2021.0.0, )"
+            },
+            "Tekla.Structures.Drawing": {
+              "target": "Package",
+              "version": "[2021.0.0, )"
+            },
+            "Tekla.Structures.Model": {
+              "target": "Package",
+              "version": "[2021.0.0, )"
+            },
+            "Tekla.Structures.Plugins": {
+              "target": "Package",
+              "version": "[2021.0.0, )"
+            },
+            "TeklaOpenAPI": {
+              "target": "Package",
+              "version": "[2021.0.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

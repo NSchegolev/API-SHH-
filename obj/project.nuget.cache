@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "dl1AVpvUsH9PRJIsKZxN6oxpvz3+Uu3mx0jsgzM8RUE+WkGpYbNjLu8NsOIgMOq5mvgSBejOnACIUakUF0/WHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Schegolev.nn\\Desktop\\API2021\\ContourPoint.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\fody\\6.6.2\\fody.6.6.2.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\propertychanged.fody\\3.4.1\\propertychanged.fody.3.4.1.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.structures\\2021.0.0\\tekla.structures.2021.0.0.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.structures.catalogs\\2021.0.0\\tekla.structures.catalogs.2021.0.0.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.structures.datatype\\2021.0.0\\tekla.structures.datatype.2021.0.0.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.structures.dialog\\2021.0.0\\tekla.structures.dialog.2021.0.0.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.structures.drawing\\2021.0.0\\tekla.structures.drawing.2021.0.0.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.structures.model\\2021.0.0\\tekla.structures.model.2021.0.0.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.structures.plugins\\2021.0.0\\tekla.structures.plugins.2021.0.0.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.technology.msglib\\2.1.18312\\tekla.technology.msglib.2.1.18312.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\tekla.technology.rkit\\2.1.4.17310\\tekla.technology.rkit.2.1.4.17310.nupkg.sha512",
+    "C:\\Users\\Schegolev.nn\\.nuget\\packages\\teklaopenapi\\2021.0.1\\teklaopenapi.2021.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

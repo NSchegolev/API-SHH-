@@ -1,0 +1,69 @@
+﻿<Window x:Class="ContourPoint.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContourPoint"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="650" Loaded="Window_Loaded" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="auto" MinWidth="800"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="2" >
+            <Button x:Name="btn_CreateBeam" Content="Создать балку" Click="btn_CreateBeam_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30" Margin="0,10,0,0" />
+            <Button x:Name="btn_CreateContourPlate" Content="Создать контурную пластину" Click="btn_CreateContourPlate_Click" HorizontalAlignment="Center" VerticalAlignment="Top"  Width="250" Height="30" Margin="0,50,0,0"/>
+            <Button x:Name="btn_CreateComponent" Content="Вставить компонент" Click="btn_CreateComponent_Click" HorizontalAlignment="Center" VerticalAlignment="Top"  Width="250" Height="30" Margin="0,90,0,0"/>
+            <Button x:Name="btn_createFitting" Content="Создать подгонку" Click="btn_createFitting_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30" Margin="0,130,0,0"/>
+            <Button x:Name="btn_createCut" Content="Создать подрезку" Click="btn_createCut_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30" Margin="0,170,0,0"/>
+            <Button x:Name="btn_createWeld" Content="Создать сварку" Click="btn_createWeld_Click"  HorizontalAlignment="Center" VerticalAlignment="Top"  Width="250" Height="30" Margin="0,210,0,0"/>
+            <Button x:Name="btn_createPoint" Content="Создать точку" Click="btn_createPoint_Click"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30" Margin="0,250,0,0"/>
+            <Button x:Name="btn_createPoint2" Content="Создать точку с помощью UI" Click="btn_createPoint2_Click"  HorizontalAlignment="Center"  VerticalAlignment="Top" Width="250" Height="30"   Margin="0,290,0,0"/>
+            <Button x:Name="btn_CreateBeamSolid" Content="Перебирать твердое тело" Click="btn_CreateBeamSolid_Click" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="250" Height="30"  Margin="0,330,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject" Content="Обнаружить балку и задать класс" Click="btn_CreateFindClassObject_Click"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,370,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject2" Content="Обнаружить пластину и задать свойства" Click="btn_CreateFindClassObject2_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,410,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject3" Content="Приложить точечную нагрузку" Click="btn_CreateFindClassObject3_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,450,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject4" Content="Приложить нагрузку на кв. м2" Click="btn_CreateFindClassObject4_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,490,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject5" Content="Приложить погонную нагрузку" Click ="btn_CreateFindClassObject5_Click"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,530,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject6" Content="Определенный пользователем атрибут" Click="btn_CreateFindClassObject6_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,570,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject7" Content="Работа с UCS" Click="btn_CreateFindClassObject7_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,610,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject8" Content="Установка UCS в нужное положение" Click="btn_CreateFindClassObject8_Click"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,650,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject9" Content="Создать балки и выделить" Click="btn_CreateFindClassObject9_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,690,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject10" Content="Временная графика" Click="btn_CreateFindClassObject10_Click"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,730,0,0"/>
+            <Button x:Name="btn_CreateFindClassObject11" Content="Выбрать грань объекта и вывести данные" Click="btn_CreateFindClassObject11_Click"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,770,0,0"/>
+        </Grid>
+        <Grid Column="2" Grid.ColumnSpan="1" Margin="0,0,450,0">
+            <Label Content="Профиль" HorizontalAlignment="Left" Margin="27,5,0,0" VerticalAlignment="Top"/>
+            <Label Content="Позиция" HorizontalAlignment="Left" Margin="28,44,0,0" VerticalAlignment="Top"/>
+            <Label Content="Материал" HorizontalAlignment="Left" Margin="30,118,0,0" VerticalAlignment="Top"/>
+            <Label Content="Имя" HorizontalAlignment="Left" Margin="36,165,0,0" VerticalAlignment="Top"/>
+            <Label Content="Класс" HorizontalAlignment="Left" Margin="32,209,0,0" VerticalAlignment="Top"/>
+            <Label Content="Позиция" HorizontalAlignment="Left" Margin="26,261,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="cb_Profile" HorizontalAlignment="Left" Margin="140,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="20" Text="PP150X100X7.0_32931_2015"/>
+            <TextBox x:Name="cb_Name" HorizontalAlignment="Left" Margin="134,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Height="20" Text="Задай имя балке!"/>
+            <TextBox x:Name="cb_Class" HorizontalAlignment="Left" Margin="132,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="20" Text="7"/>
+            <TextBox x:Name="PosT" HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="20" Text="P"/>
+            <TextBox x:Name="AssamT" HorizontalAlignment="Left" Margin="241,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Height="20" Text="100"/>
+            <TextBox x:Name="cb_Material" HorizontalAlignment="Left" Margin="137,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="20" Text="C245"/>
+            <TextBox x:Name="PosN" HorizontalAlignment="Center" Margin="0,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="20" Text="A"/>
+            <TextBox x:Name="AssamN" HorizontalAlignment="Left" Margin="243,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Height="20" Text="100"/>
+            <ComboBox x:Name="OnPlane"  HorizontalAlignment="Left" Margin="132,260,0,0" VerticalAlignment="Top" Width="184" Height="28">
+
+            </ComboBox>
+            <Button x:Name="btn_Create_New1" Content="Cоздать балку с заданными выше свойствами " Click="btn_Create_New1_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,320,0,0"/>
+
+            <Label x:Name="standartBolt" Content="Стандарт болта" HorizontalAlignment="Left" Margin="10,405,0,0" VerticalAlignment="Top" Height="30"/>
+            <Label Content="Размер болта" HorizontalAlignment="Left" Margin="10,449,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="cb_boltSize" HorizontalAlignment="Left" Margin="130,451,0,0" VerticalAlignment="Top"  Width="150" Height="30" Text="24"/>
+            <Button x:Name="btn_CreateBoltStandart" Content="Cоздать болт" Click="btn_CreateBoltStandart_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="30"  Margin="0,510,0,0"/>
+            <TextBox x:Name="cb_gostBolt" HorizontalAlignment="Left" Margin="130,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="30" Text="7805"/>
+            <Button x:Name="btn_CreateFindClassObject12" Content="????" Click="btn_CreateFindClassObject12_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Height="30"  Margin="48,574,0,0"/>
+        </Grid>
+
+
+    </Grid>
+
+</Window>
